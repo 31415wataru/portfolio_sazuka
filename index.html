@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="icon" type="image/jpg" href="icon.jpg">
+  <link rel="apple-touch-icon" sizes="180x180" href="icon.jpg">
+  <title>Sazuka Okunishi Profile</title>
+  <script>
+  </script>
+  <meta />
+</head>
+<body>
+  <div class="main-visual">
+    <left>
+    <h1><!--<font face="游ゴシック Light">-->My name is Sazuka Okunishi.<br>I'm a student.</font></h1>
+    <hr>
+    </left>
+  </div>
+    <section>
+    <center>
+    <h2><font face="游ゴシック Light">Activitys</font></h2>
+    <div class="activity">
+    <img id="activity_image"src="img/activity_1.jpg" onclick="change()">
+    </div>
+    </center>
+    
+    <div class="section_activity">
+     <div class="icon_L">
+      <img src="img/angle-double-left.svg" onclick="change_down()">
+     </div>
+    
+     <div class="activity_text">
+      <p id="activity_text"><font face="游ゴシック Light">ロボット製作</font></p>
+     </div>
+    
+     <div class="icon_R">
+      <img src="img/angle-double-right.svg" onclick="change_up();change_up_text();">
+     </div>
+
+    </div>
+    </section>
+    <script>
+        var img_src = new 
+        Array("img/activity_1.jpg","img/activity_2.jpg","img/activity_3.jpg","img/activity_4.jpg","img/activity_5.jpg");
+        var i = 0;
+  
+        function change_up() {
+  
+            if (i == 4) {
+                i = 0;
+            } else {
+                i ++;
+            }
+          document.getElementById("activity_image").src = img_src[i];
+        }
+        function change_down() {
+  
+            if (i == 0) {
+                i = 4;
+            } else {
+                i --;
+            }
+            document.getElementById("activity_image").src = img_src[i];
+        }
+  
+  
+       function change_up_text(){
+            var changetext = document.getElementById("activity_text");
+            if (changetext.textContent == "ロボット製作") {
+                changetext.textContent = "P.S等事業関連";
+            }else{
+                if (changetext.textContent == "P.S等事業関連") {
+                    changetext.textContent = "フォトグラフ";
+                }else{
+                    if (changetext.textContent == "フォトグラフ") {
+                        changetext.textContent = "Webアプリ等";
+                    }else{
+                        if (changetext.textContent == "Webアプリ等") {
+                            changetext.textContent = "動画制作関連";
+                        }else{
+                            if (changetext.textContent == "動画制作関連") {
+                                changetext.textContent = "ロボット製作";
+                            }  
+                        }
+                    }
+                }
+            }
+            
+            
+        } 
+      </script>
+</body>
+</html>

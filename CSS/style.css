@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+h2 {
+    color: white;
+    font-size: 50px;
+}
+.main-visual {
+    display: flex;
+
+    align-items: center;
+    height: 100vh;
+    background: url('topimage.jpg') top center / cover no-repeat;
+ }
+ .main-visual h1{
+    margin-left: 30px; 
+    color: white;
+    font-size: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+ }
+ .main-visual hr{
+    margin-left: 30px;  
+ }
+ .activity img{
+     width: 50%;
+ }
+
+ .icon_L img{
+    width: 3%;
+    margin-top: 30px;
+    margin: 0px;
+    
+}
+.icon_R img{
+    width: 3%;
+    margin-top: 30px;
+}
+#activity_text{
+    color: white;
+    font-size: 20px; 
+    margin: 0px; 
+}
+
+.section_activity{
+    text-align:center;
+}
+.section_activity div{
+    display: inline-block;
+}
