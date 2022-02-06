@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #262626;
     font-family:"游ゴシック Light",sans-serif;
 }
 h2 {
@@ -23,6 +23,17 @@ h2 {
  }
  .main-visual hr{
     margin-left: 30px;  
+ }
+ .myname{
+    margin-left: 30px;
+ }
+ .about_text{
+     color: white;
+     font-size: 20px;
+     margin-left: 30px;
+ }
+ .about_text hr{
+    margin-right: 30px;
  }
  .activity img{
      width: 50%;
