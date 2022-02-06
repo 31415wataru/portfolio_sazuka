@@ -12,9 +12,9 @@
   <meta />
 </head>
 <body>
-  <div class="main-visual">
+  <div class="main-visual" id="main-visual">
     <left>
-    <h1><!--<font face="游ゴシック Light">-->My name is Sazuka Okunishi.<br>I'm a student.</font></h1>
+    <h1><!--<font face="游ゴシック Light">-->My name is Sazuka Okunishi.<br>I'm a student.</h1>
     <hr>
     </left>
   </div>
@@ -131,6 +131,15 @@
             
             
         } 
+
+        window.addEventListener('scroll', () => {
+            //idがkeyvisualの要素を取得
+        let elem = document.getElementById('main-visual');
+        //現在のスクロール位置を取得して、10で除算
+        let scrollY = window.scrollY/30;
+            //上で取得した値と画像幅を加算して、elemの背景サイズに設定
+        elem.style.backgroundSize = 100 + scrollY + '%';
+});
       </script>
 </body>
 </html>
