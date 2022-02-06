@@ -25,21 +25,38 @@
     <img id="activity_image"src="img/activity_1.jpg" onclick="change()">
     </div>
     </center>
-    
+    <!--
     <div class="section_activity">
      <div class="icon_L">
-      <img src="img/angle-double-left.svg" onclick="change_down()">
+      <img src="img/angle-double-left.svg" onclick="change_down();change_down_text();">
      </div>
-    
      <div class="activity_text">
       <p id="activity_text"><font face="游ゴシック Light">ロボット製作</font></p>
      </div>
-    
      <div class="icon_R">
       <img src="img/angle-double-right.svg" onclick="change_up();change_up_text();">
      </div>
 
-    </div>
+    </div>-->
+    <table border="0" align="left">
+        <tr>
+        <td>
+            <div class="icon_L">
+            <img src="img/angle-double-left.svg" onclick="change_down();change_down_text();">
+            </div>
+        </td>
+        <td>
+            <div class="activity_text">
+                <p id="activity_text"><font face="游ゴシック Light">ロボット製作</font></p>
+            </div>
+        </td>
+        <td>
+            <div class="icon_R">
+                <img src="img/angle-double-right.svg" onclick="change_up();change_up_text();">
+            </div>  
+        </td>
+        </tr>
+    </table>
     </section>
     <script>
         var img_src = new 
@@ -81,6 +98,30 @@
                             changetext.textContent = "動画制作関連";
                         }else{
                             if (changetext.textContent == "動画制作関連") {
+                                changetext.textContent = "ロボット製作";
+                            }  
+                        }
+                    }
+                }
+            }
+            
+            
+        } 
+        function change_down_text(){
+            var changetext = document.getElementById("activity_text");
+            if (changetext.textContent == "ロボット製作") {
+                changetext.textContent = "動画制作関連";
+            }else{
+                if (changetext.textContent == "動画制作関連") {
+                    changetext.textContent = "Webアプリ等";
+                }else{
+                    if (changetext.textContent == "Webアプリ等") {
+                        changetext.textContent = "フォトグラフ";
+                    }else{
+                        if (changetext.textContent == "フォトグラフ") {
+                            changetext.textContent = "P.S等事業関連";
+                        }else{
+                            if (changetext.textContent == "P.S等事業関連") {
                                 changetext.textContent = "ロボット製作";
                             }  
                         }

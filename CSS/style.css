@@ -5,6 +5,7 @@ h2 {
     color: white;
     font-size: 50px;
 }
+
 .main-visual {
     display: flex;
 
@@ -27,24 +28,27 @@ h2 {
  }
 
  .icon_L img{
-    width: 3%;
-    margin-top: 30px;
-    margin: 0px;
-    
+    width: 10%;
+    float: right;
+    margin-right: 20%;
 }
 .icon_R img{
-    width: 3%;
-    margin-top: 30px;
+    width: 10%;
+    margin-left: 20%;
 }
 #activity_text{
     color: white;
-    font-size: 20px; 
-    margin: 0px; 
+    font-size: 30px;  
+    text-align: center;
 }
 
 .section_activity{
-    text-align:center;
+    text-align: center;
 }
 .section_activity div{
     display: inline-block;
+}
+td{
+    width: 30%;
+    
 }
