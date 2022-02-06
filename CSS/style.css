@@ -24,6 +24,21 @@ h2 {
  .main-visual hr{
     margin-left: 30px;  
  }
+ .top_title{
+ }
+ .top_nav{
+     padding-left: 22vw;
+ }
+ .top_table{
+
+ }
+ .top_nav_text {
+    float: right;
+ }
+ .top_nav_text li{
+    color: white;
+    list-style-type: none;
+ }
  .myname{
     margin-left: 30px;
  }
@@ -60,7 +75,7 @@ h2 {
 .section_activity div{
     display: inline-block;
 }
-td{
+.choice{
     width: 30%;
     
 }

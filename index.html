@@ -12,11 +12,34 @@
   <meta />
 </head>
 <body>
-  <div class="main-visual" id="main-visual">
+  <!--<div class="main-visual" id="main-visual">
     <left>
-    <h1><!--<font face="游ゴシック Light">-->My name is Sazuka Okunishi.<br>I'm a student.</h1>
+    <h1><!--<font face="游ゴシック Light">My name is Sazuka Okunishi.<br>I'm a student.</h1>
     <hr>
     </left>
+  </div>-->
+  <div class="main-visual" id="main-visual">
+    <table class="top_table" border="0" align="left">
+     <tr>
+      <left>
+      <td class="top_title">
+       <h1><!--<font face="游ゴシック Light">-->My name is Sazuka Okunishi.<br>I'm a student.</h1>
+       <hr>
+      </td>
+      </left>
+      <td class="top_nav">
+        <ul class="top_nav_text">
+            <li>Activitys</li> 
+            <br>
+            <li>Careers</li>
+            <br>
+            <li>Links</li>
+            <br>
+            <li>Contacts</li>
+        </ul>
+      </td>
+     </tr>
+    </table>
   </div>
   <h2 class="myname">奥西 授</h2>
   <P class="about_text">初めまして(おくにしさずか)と言います。<br>技術系の分野を中心に色々やってます。
@@ -25,7 +48,7 @@
 　<br>高校Sci-Tech部部長
 　<br>GENIEメンバー
 　<br>P.S共同代表
-  <br>AEGISキャプテン
+  <br>AEGISキャプテン<br>
 　</P>
   <div class="about_text">
   <hr>
@@ -37,32 +60,19 @@
     <img id="activity_image"src="img/activity_1.jpg" onclick="change()">
     </div>
     </center>
-    <!--
-    <div class="section_activity">
-     <div class="icon_L">
-      <img src="img/angle-double-left.svg" onclick="change_down();change_down_text();">
-     </div>
-     <div class="activity_text">
-      <p id="activity_text"><font face="游ゴシック Light">ロボット製作</font></p>
-     </div>
-     <div class="icon_R">
-      <img src="img/angle-double-right.svg" onclick="change_up();change_up_text();">
-     </div>
-
-    </div>-->
     <table border="0" align="left">
         <tr>
-        <td>
+        <td class="choice">
             <div class="icon_L">
             <img src="img/angle-double-left.svg" onclick="change_down();change_down_text();">
             </div>
         </td>
-        <td>
+        <td class="choice">
             <div class="activity_text">
                 <p id="activity_text">ロボット製作</p>
             </div>
         </td>
-        <td>
+        <td class="choice">
             <div class="icon_R">
                 <img src="img/angle-double-right.svg" onclick="change_up();change_up_text();">
             </div>  
