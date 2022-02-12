@@ -123,4 +123,15 @@ h2 {
     float: left;
     margin-right: 15px;
 }
-
+.activity_next_click{
+    scroll-behavior: smooth;  
+}
+.nav_tab_next{
+    width: 20vw;
+    align-items: center;
+}
+.activity_tab_next{
+    width: 80vw;
+    background-color: #001437;
+    margin-left: 5px;
+}
