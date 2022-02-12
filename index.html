@@ -14,7 +14,7 @@
 <body>
   <!--<div class="main-visual" id="main-visual">
     <left>
-    <h1><!--<font face="游ゴシック Light">My name is Sazuka Okunishi.<br>I'm a student.</h1>
+    <h1><font face="游ゴシック Light">My name is Sazuka Okunishi.<br>I'm a student.</h1>
     <hr>
     </left>
   </div>-->
@@ -126,19 +126,19 @@
        function change_up_text(){
             var changetext = document.getElementById("activity_text");
             if (changetext.textContent == "ロボット製作") {
-                changetext.textContent = "P.S等事業関連";
+                changetext.innerHTML = "<a href='activity.html#PS'>P.S等事業関連</a>";
             }else{
                 if (changetext.textContent == "P.S等事業関連") {
-                    changetext.textContent = "フォトグラフ";
+                    changetext.innerHTML = "<a href='activity.html#photo'>フォトグラフ</a>";
                 }else{
                     if (changetext.textContent == "フォトグラフ") {
-                        changetext.textContent = "Webアプリ等";
+                        changetext.innerHTML = "<a href='activity.html#webapp'>Webアプリ等</a>";
                     }else{
                         if (changetext.textContent == "Webアプリ等") {
-                            changetext.textContent = "動画制作関連";
+                            changetext.innerHTML = "<a href='activity.html#movie'>動画制作関連</a>";
                         }else{
                             if (changetext.textContent == "動画制作関連") {
-                                changetext.textContent = "ロボット製作";
+                                changetext.innerHTML = "<a href='activity.html#robots'>ロボット製作</a>";
                             }  
                         }
                     }
@@ -150,19 +150,19 @@
         function change_down_text(){
             var changetext = document.getElementById("activity_text");
             if (changetext.textContent == "ロボット製作") {
-                changetext.textContent = "動画制作関連";
+                changetext.innerHTML = "<a href='activity.html#movie'>動画制作関連</a>";
             }else{
                 if (changetext.textContent == "動画制作関連") {
-                    changetext.textContent = "Webアプリ等";
+                    changetext.innerHTML = "<a href='activity.html#webapp'>Webアプリ等</a>";
                 }else{
                     if (changetext.textContent == "Webアプリ等") {
-                        changetext.textContent = "フォトグラフ";
+                        changetext.innerHTML = "<a href='activity.html#photo'>フォトグラフ</a>";
                     }else{
                         if (changetext.textContent == "フォトグラフ") {
-                            changetext.textContent = "P.S等事業関連";
+                            changetext.innerHTML = "<a href='activity.html#ps'>P.S等事業関連</a>";
                         }else{
                             if (changetext.textContent == "P.S等事業関連") {
-                                changetext.textContent = "ロボット製作";
+                                changetext.innerHTML = "<a href='activity.html#robots'>ロボット製作</a>";
                             }  
                         }
                     }

@@ -1,5 +1,6 @@
 body {
     background-color: #262626;
+
     font-family:"游ゴシック Light",sans-serif;
 }
 h2 {
@@ -77,3 +78,49 @@ h2 {
     width: 30%;
     
 }
+.test{
+    color: white;
+}
+/*-------------------ここまでHOME---------------------*/
+.page_nav{
+    color: white;
+    list-style-type: none;
+    padding-left: 10px;
+}
+.nav_table{
+   
+
+}
+.nav_tab{
+    width: 20vw;
+    height: 100vh;
+    align-items: center;
+}
+.activity_tab{
+    height: 100vh;
+    width: 80vw;
+    background-color: #001437;
+}
+.activity_img{
+    width: 100%;
+}
+
+.activity_title{
+    color: white;
+    font-size: 40px;
+    margin-left: 5px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.activity_detail{
+    color: white;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.activity_detail_img{
+    width: 40%;
+    margin-left: 5px;
+    float: left;
+    margin-right: 15px;
+}
+
