@@ -93,11 +93,11 @@ h2 {
 }
 .nav_tab{
     width: 20vw;
-    height: 100vh;
+    height: 95vh;
     align-items: center;
 }
 .activity_tab{
-    height: 100vh;
+    height: 95vh;
     width: 80vw;
     background-color: #001437;
 }
@@ -124,9 +124,9 @@ h2 {
     float: left;
     margin-right: 15px;
 }
-.activity_next_click{
+/*.activity_next_click{
     scroll-behavior: smooth;  
-}
+}*/
 .nav_tab_next{
     width: 20vw;
     align-items: center;

@@ -9,11 +9,15 @@
   <title>Sazuka Okunishi Profile</title>
   
   <meta />
+    <!--スクロール関連の処理-->
+    <!--<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/6-1.css">
+    -->
 </head>
 <body>
     
-<div class="nav_table">
- <table align="left">
+<section id="box1" class="box">
+ <table align="left" border="0">
   <tr>
    <td class="nav_tab">  
      <li class="page_nav"><a href="index.html">HOME</a></li>
@@ -26,7 +30,7 @@
     </ul>
    </td>
    <td valign="top" class="activity_tab">
-     <img class="activity_img" src="img/activity_1_a.jpg">
+     <img class="activity_img" src="img/activity_1_a_s.jpg">
      <p class="activity_title">ロボット制作</p>
      <hr>
      <br>
@@ -49,8 +53,8 @@
    </td>   
   </tr>
  </table>
-</div>
-<div class="nav_table">
+</section>
+<!--<section class="nav_table">
  <table align="left">
   <tr>
    <td class="nav_tab_next">  
@@ -62,8 +66,8 @@
    </td>   
   </tr>
  </table>
-</div>
-<div class="nav_table">
+</section>-->
+<section id="box2" class="box">
     <table align="left" id="target">
      <tr>
       <td class="nav_tab">  
@@ -77,11 +81,11 @@
        </ul>
       </td>
       <td valign="top" class="activity_tab">
-        <img class="activity_img" src="img/activity_2_a.jpg">
-        <p class="activity_title">ロボット制作</p>
+        <img class="activity_img" src="img/activity_2_a_s.jpg">
+        <p class="activity_title">事業関連</p>
         <hr>
         <br>
-        <img class="activity_detail_img" src="img/activity_robot.jpg">
+        <img class="activity_detail_img" src="img/activity_ps.jpg">
         <p class="activity_detail">
             小学校の頃から電子工作に興味を持ちロボカップジュニアという自立型のロボットが様々な
             競技を行う大会に出場しています。中学校の頃は関西ブロック、高校の頃は京滋奈ブロックからサッカーライトウエイト
@@ -100,7 +104,81 @@
       </td>   
      </tr>
     </table>
-   </div>
-   <script>
+</section>
+<section id="box3" class="box">
+    <table align="left" id="target">
+     <tr>
+      <td class="nav_tab">  
+        <li class="page_nav"><a href="index.html">HOME</a></li>
+        <br>
+        <li class="page_nav">CAREERS</li>
+        <br>
+        <li class="page_nav">LINKS</li>
+        <br>
+        <li class="page_nav">CONTACTS</li>   
+       </ul>
+      </td>
+      <td valign="top" class="activity_tab">
+        <img class="activity_img" src="img/activity_2_a.jpg">
+        <p class="activity_title">事業関連</p>
+        <hr>
+        <br>
+        <img class="activity_detail_img" src="img/activity_ps.jpg">
+        <p class="activity_detail">
+            小学校の頃から電子工作に興味を持ちロボカップジュニアという自立型のロボットが様々な
+            競技を行う大会に出場しています。中学校の頃は関西ブロック、高校の頃は京滋奈ブロックからサッカーライトウエイト
+            に参加していました。<br>
+            高校時代の成績<br>
+            ロボカップジュニア2020
+            京都ノード敗退<br>
+            ロボカップジュニア2021
+            京滋奈ブロック4位<br>
+            ロボカップジュニア2022
+            京滋奈ブロック1位<br>
+             またロボカップでロボットを制作する過程で得たCADの知識を使ってFusion360で鉄道車両を
+            モデリングしたりしています。
+        </p>
+   
+      </td>   
+     </tr>
+    </table>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/js/6-1.js"></script>
+
+<script>
+        $.scrollify({
+        section : ".box",//1ページスクロールさせたいエリアクラス名
+        scrollbars:"false",//スクロールバー表示・非表示設定
+        interstitialSection : "#header,#footer",//ヘッダーフッターを認識し、1ページスクロールさせず表示されるように設定
+        easing: "swing", // 他にもlinearやeaseOutExpoといったjQueryのeasing指定可能
+        scrollSpeed: 300, // スクロール時の速度
+    
+  //以下、ページネーション設定
+        before:function(i,panels) {
+          var ref = panels[i].attr("data-section-name");
+          $(".pagination .active").removeClass("active");
+          $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+        },
+        afterRender:function() {
+          var pagination = "<ul class=\"pagination\">";
+           var activeClass = "";
+            $(".box").each(function(i) {//1ページスクロールさせたいエリアクラス名を指定
+             activeClass = "";
+            
+            if(i===$.scrollify.currentIndex()) {
+             activeClass = "active";
+            }
+             pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+            });
+         }
+  });
+</script>
 </body>
 </html>
