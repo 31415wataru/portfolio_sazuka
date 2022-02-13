@@ -88,16 +88,16 @@ h2 {
     padding-left: 10px;
 }
 .box{
-    height: 100vh;
+   
 
 }
 .nav_tab{
     width: 20vw;
-    
+    height: 99vh;
     align-items: center;
 }
 .activity_tab{
-  
+    height: 99vh;
     width: 80vw;
     background-color: #001437;
 }
