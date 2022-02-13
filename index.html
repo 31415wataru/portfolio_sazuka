@@ -11,7 +11,7 @@
   </script>
   <meta />
 </head>
-<body>
+<body link="white" vlink="white">
   <!--<div class="main-visual" id="main-visual">
     <left>
     <h1><font face="游ゴシック Light">My name is Sazuka Okunishi.<br>I'm a student.</h1>
@@ -29,9 +29,9 @@
       </left>
       <td class="top_nav">
         <ul class="top_nav_text">
-            <li><a href="activity.html">Activitys</a></li> 
+            <li><a href="activity.html">Activityies</a></li> 
             <br>
-            <li>Careers</li>
+            <li><a href="history.html">Historys</a></li>
             <br>
             <li>Links</li>
             <br>
@@ -55,7 +55,7 @@
   </div>
     <section>
     <center>
-    <h2>Activitys</h2>
+    <h2><a href="activity.html"class="mainlink">Activitys</a></h2>
     <div class="activity">
     <img id="activity_image"src="img/activity_1.jpg" onclick="change()">
     </div>
@@ -86,7 +86,7 @@
     
     <section>
     <center>
-        <h2>Careers</h2>
+        <h2>Historys</h2>
     </center>
     </section>
     <div class="about_text">
@@ -126,19 +126,19 @@
        function change_up_text(){
             var changetext = document.getElementById("activity_text");
             if (changetext.textContent == "ロボット製作") {
-                changetext.innerHTML = "<a href='activity.html#PS'>P.S等事業関連</a>";
+                changetext.innerHTML = "<a href='activity.html#2'>P.S等事業関連</a>";
             }else{
                 if (changetext.textContent == "P.S等事業関連") {
-                    changetext.innerHTML = "<a href='activity.html#photo'>フォトグラフ</a>";
+                    changetext.innerHTML = "<a href='activity.html#3'>フォトグラフ</a>";
                 }else{
                     if (changetext.textContent == "フォトグラフ") {
-                        changetext.innerHTML = "<a href='activity.html#webapp'>Webアプリ等</a>";
+                        changetext.innerHTML = "<a href='activity.html#4'>Webアプリ等</a>";
                     }else{
                         if (changetext.textContent == "Webアプリ等") {
-                            changetext.innerHTML = "<a href='activity.html#movie'>動画制作関連</a>";
+                            changetext.innerHTML = "<a href='activity.html#5'>動画制作関連</a>";
                         }else{
                             if (changetext.textContent == "動画制作関連") {
-                                changetext.innerHTML = "<a href='activity.html#robots'>ロボット製作</a>";
+                                changetext.innerHTML = "<a href='activity.html#1'>ロボット製作</a>";
                             }  
                         }
                     }
@@ -150,19 +150,19 @@
         function change_down_text(){
             var changetext = document.getElementById("activity_text");
             if (changetext.textContent == "ロボット製作") {
-                changetext.innerHTML = "<a href='activity.html#movie'>動画制作関連</a>";
+                changetext.innerHTML = "<a href='activity.html#5'>動画制作関連</a>";
             }else{
                 if (changetext.textContent == "動画制作関連") {
-                    changetext.innerHTML = "<a href='activity.html#webapp'>Webアプリ等</a>";
+                    changetext.innerHTML = "<a href='activity.html#4'>Webアプリ等</a>";
                 }else{
                     if (changetext.textContent == "Webアプリ等") {
-                        changetext.innerHTML = "<a href='activity.html#photo'>フォトグラフ</a>";
+                        changetext.innerHTML = "<a href='activity.html#3'>フォトグラフ</a>";
                     }else{
                         if (changetext.textContent == "フォトグラフ") {
-                            changetext.innerHTML = "<a href='activity.html#ps'>P.S等事業関連</a>";
+                            changetext.innerHTML = "<a href='activity.html#2'>P.S等事業関連</a>";
                         }else{
                             if (changetext.textContent == "P.S等事業関連") {
-                                changetext.innerHTML = "<a href='activity.html#robots'>ロボット製作</a>";
+                                changetext.innerHTML = "<a href='activity.html#1'>ロボット製作</a>";
                             }  
                         }
                     }

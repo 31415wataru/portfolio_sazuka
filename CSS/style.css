@@ -6,8 +6,11 @@ body {
 h2 {
     color: white;
     font-size: 50px;
+    transition: all  1s ease;
 }
-
+h2 a:hover{
+    color: #ffff23;
+}
 .main-visual {
     display: flex;
 
@@ -37,6 +40,10 @@ h2 {
  .top_nav_text{
     color: white;
     list-style-type: none;
+    text-decoration: none;
+ }
+ .top_nav_text a:hover{
+    color: #ffff23;
  }
  .myname{
     margin-left: 30px;
@@ -81,6 +88,7 @@ h2 {
 .test{
     color: white;
 }
+
 /*-------------------ここまでHOME---------------------*/
 .page_nav{
     color: white;
@@ -157,3 +165,52 @@ h2 {
     background: url('activity_background.png');
     background-size: 100%;
 }
+.mainlink{
+    text-decoration: none;
+}
+/*----------------ここまでactivity-----------*/
+header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #262626;
+    align-items: center;
+  }
+   
+  .header_name {
+    margin-left: 5px;
+    margin-right: auto;
+    color: white;
+  }
+   
+  .header_item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .header_item a:hover{
+   
+    color: #ffff23;
+  }
+  /*------------------ここまでヘッダ--------------*/
+  .image_top{
+      width:100%;
+  }
+  .history_title{
+      border-left: #ffff23 solid 5px;
+      color: white;
+      font-size: 35px;
+      padding-left: 5px;
+      margin-left: 10px;
+  }
+  .history_detail{
+      color:white;
+      font-size: 25px;
+      margin-left: 25px;
+  }
+  .history_detail_sub{
+    color:white;
+    font-size: 22px;
+    margin-left: 35px;
+  }
