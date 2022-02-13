@@ -93,11 +93,11 @@ h2 {
 }
 .nav_tab{
     width: 20vw;
-    height: 95vh;
+    height: 100vh;
     align-items: center;
 }
 .activity_tab{
-    height: 95vh;
+    height: 100vh;
     width: 80vw;
     background-color: #001437;
 }
