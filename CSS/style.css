@@ -75,15 +75,15 @@ footer{
     width: 10%;
     margin-left: 20%;
 }
-/*@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     #activity_text{
         color: white;
         font-size: 18px;  
         text-align: center;
     }
-}*/
+}
     #activity_text{
-        color: white;
+        color: red;
         font-size: 30px;  
         text-align: center;
     }
