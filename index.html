@@ -56,6 +56,7 @@
     <section>
     <center>
     <h2><a href="activity.html"class="mainlink">Activity</a></h2>
+    <p class="top_text">活動内容や趣味について簡単にまとめています</p>
     <div class="activity">
     <img id="activity_image"src="img/activity_1.jpg" onclick="change()">
     </div>
@@ -87,6 +88,7 @@
     <section>
     <center>
         <h2><a href="history.html"class="mainlink">History</a></h2>
+        <p class="top_text">高校時代からの略歴についてあげています。</p>
     </center>
     </section>
     <div class="about_text">
@@ -95,9 +97,23 @@
     <section>
     <center>
         <h2><a href="history.html"class="mainlink">Link</a></h2>
+        <p class="top_text">各種リンクについてまとめています</p>
     </center>
     </section>
-    
+    <div class="about_text">
+        <hr>
+    </div>
+    <section>
+    <center>
+        <h2><a href="history.html"class="mainlink">Contact</a></h2>
+        <p class="top_text">連絡先はこちら(メール)</p>
+    </center>
+    </section>
+    <center>
+    <footer>
+        &copy; Okunishi 2022
+    </footer>
+    </center>
     <script>
         var img_src = new 
         Array("img/activity_1.jpg","img/activity_2.JPG","img/activity_3.jpg","img/activity_4.JPG","img/activity_5.JPG");
@@ -179,41 +195,6 @@
         let scrollY = window.scrollY/25;
             //上で取得した値と画像幅を加算して、elemの背景サイズに設定
         elem.style.backgroundSize = 100 + scrollY + '%';
-});
-</script>
-<script>
-    $(function(){
- 
- $(window).on('load scroll', function(){
-       //現時点のスクロールの高さ取得
-  var scrollPosition = $(window).scrollTop();
-  //ウィンドウの高さ取得
-  var windowHeight = $(window).height();
-
- $('.myname').each(function(){
-      //要素の位置（高さ）を取得
-     var elemPosition = $(this).offset().top;
-      //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
-   if(elemPosition < scrollPosition + windowHeight){
-    $(this).css({
-     opacity: 1,
-     transform: 'translateY(0)'
-    });
-   }
- });
- $('.about_text').each(function(){
-      //要素の位置（高さ）を取得
-     var elemPosition = $(this).offset().top;
-      //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
-   if(elemPosition < scrollPosition + windowHeight){
-    $(this).css({
-     opacity: 1,
-     transform: 'translateY(0)'
-    });
-   }
- });
-});
-
 });
 </script>
 </body>

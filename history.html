@@ -9,6 +9,7 @@
   <title>Sazuka Okunishi Profile</title>
   
   <meta />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body link="white" vlink="white">
     <header>
@@ -24,7 +25,7 @@
           </nav>
     </header>
     <img class="image_top" src="img/history_top.jpg">
-    <p class="history_title">略歴(Histories)</p>
+    <p class="history_title_1">略歴(Histories)</p>
     <p class="history_detail"><b>2019年3月</b></p>
     <ul>
      <li class="history_detail_sub">中学校卒業</li>
@@ -177,6 +178,56 @@
     <ul>
      <li class="history_detail_sub">守山市広報誌に掲載(予定)</li>
     </ul>
-    
+    <center>
+      <footer>
+          &copy; Okunishi 2022
+      </footer>
+      </center>
+    <script>
+      $(function(){
+   
+   $(window).on('load scroll', function(){
+         //現時点のスクロールの高さ取得
+    var scrollPosition = $(window).scrollTop();
+    //ウィンドウの高さ取得
+    var windowHeight = $(window).height();
+  
+   $('.history_detail').each(function(){
+        //要素の位置（高さ）を取得
+       var elemPosition = $(this).offset().top;
+        //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+     if(elemPosition < scrollPosition + windowHeight){
+      $(this).css({
+       opacity: 1,
+       transform: 'translateY(0)'
+      });
+     }
+   });
+   $('.history_detail_sub').each(function(){
+        //要素の位置（高さ）を取得
+       var elemPosition = $(this).offset().top;
+        //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+     if(elemPosition < scrollPosition + windowHeight){
+      $(this).css({
+       opacity: 1,
+       transform: 'translateX(0)'
+      });
+     }
+   });
+   $('.history_title').each(function(){
+        //要素の位置（高さ）を取得
+       var elemPosition = $(this).offset().top;
+        //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+     if(elemPosition < scrollPosition + windowHeight){
+      $(this).css({
+       opacity: 1,
+       transform: 'translateX(0)'
+      });
+     }
+   });
+  });
+  
+  });
+  </script>  
   </body>
   </html>
