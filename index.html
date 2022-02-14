@@ -7,9 +7,9 @@
   <link rel="icon" type="image/jpg" href="icon.jpg">
   <link rel="apple-touch-icon" sizes="180x180" href="icon.jpg">
   <title>Sazuka Okunishi Profile</title>
-  <script>
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta />
+  
 </head>
 <body link="white" vlink="white">
   <!--<div class="main-visual" id="main-visual">
@@ -33,7 +33,7 @@
             <br>
             <li><a href="history.html">Historys</a></li>
             <br>
-            <li>Links</li>
+            <li><a href="link.html">Links</a></li>
             <br>
             <li>Contacts</li>
         </ul>
@@ -55,7 +55,7 @@
   </div>
     <section>
     <center>
-    <h2><a href="activity.html"class="mainlink">Activitys</a></h2>
+    <h2><a href="activity.html"class="mainlink">Activity</a></h2>
     <div class="activity">
     <img id="activity_image"src="img/activity_1.jpg" onclick="change()">
     </div>
@@ -86,7 +86,7 @@
     
     <section>
     <center>
-        <h2><a href="history.html"class="mainlink">Historys</a></h2>
+        <h2><a href="history.html"class="mainlink">History</a></h2>
     </center>
     </section>
     <div class="about_text">
@@ -94,7 +94,7 @@
     </div>
     <section>
     <center>
-        <h2>Links</h2>
+        <h2><a href="history.html"class="mainlink">Link</a></h2>
     </center>
     </section>
     
@@ -180,6 +180,41 @@
             //上で取得した値と画像幅を加算して、elemの背景サイズに設定
         elem.style.backgroundSize = 100 + scrollY + '%';
 });
-      </script>
+</script>
+<script>
+    $(function(){
+ 
+ $(window).on('load scroll', function(){
+       //現時点のスクロールの高さ取得
+  var scrollPosition = $(window).scrollTop();
+  //ウィンドウの高さ取得
+  var windowHeight = $(window).height();
+
+ $('.myname').each(function(){
+      //要素の位置（高さ）を取得
+     var elemPosition = $(this).offset().top;
+      //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+   if(elemPosition < scrollPosition + windowHeight){
+    $(this).css({
+     opacity: 1,
+     transform: 'translateY(0)'
+    });
+   }
+ });
+ $('.about_text').each(function(){
+      //要素の位置（高さ）を取得
+     var elemPosition = $(this).offset().top;
+      //スクロールの高さが要素の位置を超えたら以下のスタイルを適用
+   if(elemPosition < scrollPosition + windowHeight){
+    $(this).css({
+     opacity: 1,
+     transform: 'translateY(0)'
+    });
+   }
+ });
+});
+
+});
+</script>
 </body>
 </html>

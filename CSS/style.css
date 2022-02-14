@@ -47,11 +47,16 @@ h2 a:hover{
  }
  .myname{
     margin-left: 30px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s ease;
  }
  .about_text{
      color: white;
      font-size: 20px;
      margin-left: 30px;
+     transform: translateX(50px);
+     transition: 1s ease;
  }
  .about_text hr{
     margin-right: 30px;
@@ -94,6 +99,12 @@ h2 a:hover{
     color: white;
     list-style-type: none;
     padding-left: 10px;
+}
+.page_nav a{
+    color: white;
+}
+.page_nav a:hover{
+    color: #ffff23;
 }
 .box{
     height: 100vh;
@@ -196,6 +207,7 @@ header {
   /*------------------ここまでヘッダ--------------*/
   .image_top{
       width:100%;
+      animation: slideIn 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
   }
   .history_title{
       border-left: #ffff23 solid 5px;
@@ -203,14 +215,29 @@ header {
       font-size: 35px;
       padding-left: 5px;
       margin-left: 10px;
+      animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+  }   
+  @keyframes slideIn {
+    0% {
+      transform: translateX(130px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+    }
+    50%,100% {
+      opacity: 1;
+    }
   }
   .history_detail{
       color:white;
       font-size: 25px;
       margin-left: 25px;
+      animation: slideIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
   }
   .history_detail_sub{
     color:white;
     font-size: 22px;
     margin-left: 35px;
+    animation: slideIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
   }
