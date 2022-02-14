@@ -9,7 +9,7 @@
   <title>Sazuka Okunishi Profile</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <meta />
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body link="white" vlink="white">
   <!--<div class="main-visual" id="main-visual">
@@ -187,7 +187,7 @@
             
             
         } 
-
+        if (window.innerWidth > 800){
         window.addEventListener('scroll', () => {
             //idがkeyvisualの要素を取得
         let elem = document.getElementById('main-visual');
@@ -196,6 +196,7 @@
             //上で取得した値と画像幅を加算して、elemの背景サイズに設定
         elem.style.backgroundSize = 100 + scrollY + '%';
 });
+        }
 </script>
 </body>
 </html>

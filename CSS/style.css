@@ -16,11 +16,12 @@ footer{
 }
 .main-visual {
     display: flex;
-
     align-items: center;
     height: 100vh;
     background: url('topimage.jpg') top center / cover no-repeat;
- }
+}
+
+ 
  .main-visual h1{
     margin-left: 30px; 
     color: white;
