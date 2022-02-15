@@ -173,9 +173,6 @@ footer{
     clear: left;
     margin-right: 15px;
 }
-/*.activity_next_click{
-    scroll-behavior: smooth;  
-}*/
 .nav_tab_next{
     width: 20vw;
     align-items: center;
@@ -185,10 +182,11 @@ footer{
     background-color: #001437;
     margin-left: 5px;
 }
-#activity_body{
+#PC_view{
     background: url('activity_background.png');
     background-size: 100%;
 }
+
 .mainlink{
     text-decoration: none;
 }
@@ -197,6 +195,57 @@ footer{
 }
 .detail_link :hover{
     color: #ffff23;
+}
+#mob_view{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+	/*スマホ用のCSS*/
+    #PC_view{
+        display: none;
+    }
+    .activity_detail_img{
+        width: 88%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .activity_detail{
+        color: white;
+        font-size: 17px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .activity_detail_img_p1{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .activity_detail_img_p2{
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .activity_detail_img_p3{
+        width: 95%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .youtube {
+        position: relative;
+        padding-bottom: 56.25%; /* アスペクト比16:9の場合 */
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    .youtube iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 /*----------------ここまでactivity-----------*/
 header {
