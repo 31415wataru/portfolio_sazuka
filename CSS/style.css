@@ -270,7 +270,7 @@ label {
     color :#fff;
     background-color: transparent;
     cursor :pointer;
-    text-align: right;
+    text-align: left;
 }
 
 input {
@@ -298,6 +298,9 @@ input {
 #menu_bar02:checked ~ #links02 li {
     height: 54px;
     opacity: 1;
+}
+.mob_header{
+    text-align: left;
 }
 /*----------------ここまでactivity-----------*/
 header {
@@ -374,4 +377,14 @@ header {
     opacity: 0;
       transform: translateX(20px);
       transition: 1s ease;
+  }
+  @media screen and (min-width: 481px) {
+    .menu{
+        display: none;
+    }
+    }
+  @media screen and (max-width: 480px) {
+    header{
+        display: none;
+    }
   }
