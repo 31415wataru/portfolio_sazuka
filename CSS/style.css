@@ -196,9 +196,7 @@ footer{
 .detail_link :hover{
     color: #ffff23;
 }
-#mob_view{
-    display: none !important;
-}
+
 @media screen and (max-width: 480px) {
 	/*スマホ用のCSS*/
     #PC_view{
